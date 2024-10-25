@@ -1,0 +1,12 @@
+extends baseEmail
+
+block content
+  p Hi #{firstName},
+  <br>
+  p Welcome to Where2! To complete your registration, please use the following verification code:
+  <br>
+  h2.verification-code= verificationCode
+  <br>
+  p This code will expire in 10 minutes.
+  p If you didn't sign up for an account, please ignore this email.
+  p - The Where2 Team
